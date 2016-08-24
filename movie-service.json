@@ -1,0 +1,54 @@
+{
+  "id": "/movie-services",
+  "cmd": null,
+  "cpus": 0.5,
+  "mem": 1000,
+  "disk": 0,
+  "instances": 1,
+  "acceptedResourceRoles": [
+    "slave_public"
+  ],
+  "container": {
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "dockerniu/movie-microservice",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 9006,
+          "hostPort": 9006,
+          "servicePort": 10002,
+          "protocol": "tcp",
+          "labels": {}
+        }
+      ],
+      "privileged": false,
+      "parameters": [
+        {
+          "key": "hostname",
+          "value": "movie"
+        },
+        {
+          "key": "network",
+          "value": "microservice"
+        },
+        {
+          "key": "network-alias",
+          "value": "movie"
+        }
+      ],
+      "forcePullImage": true
+    }
+  },
+  "env": {
+    "SPRING_PROFILES_ACTIVE": "docker"
+  },
+  "portDefinitions": [
+    {
+      "port": 10002,
+      "protocol": "tcp",
+      "labels": {}
+    }
+  ]
+}
