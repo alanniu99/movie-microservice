@@ -17,8 +17,6 @@
       "portMappings": [
         {
           "containerPort": 9006,
-          "hostPort": 9006,
-          "servicePort": 10002,
           "protocol": "tcp",
           "labels": {}
         }
@@ -43,12 +41,5 @@
   },
   "env": {
     "SPRING_PROFILES_ACTIVE": "docker"
-  },
-  "portDefinitions": [
-    {
-      "port": 10002,
-      "protocol": "tcp",
-      "labels": {}
-    }
-  ]
+  }
 }
