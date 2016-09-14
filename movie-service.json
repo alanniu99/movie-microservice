@@ -1,13 +1,10 @@
 {
-  "id": "/movie-services",
+  "id": "/movieapps/movie-services/movie-services",
   "cmd": null,
   "cpus": 0.5,
   "mem": 1000,
   "disk": 0,
   "instances": 1,
-  "acceptedResourceRoles": [
-    "slave_public"
-  ],
   "container": {
     "type": "DOCKER",
     "volumes": [],
