@@ -2,7 +2,7 @@
   "id": "/movieapps/movie-services/movie",
   "cmd": null,
   "cpus": 0.3,
-  "mem": 1000,
+  "mem": 2000,
   "disk": 0,
   "instances": 1,
   "container": {

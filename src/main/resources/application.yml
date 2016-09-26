@@ -38,6 +38,7 @@ eureka:
       defaultZone: http://discovery:8761/eureka/
   instance:
     preferIpAddress: true
+    ipAddress: ${server.address}
 ribbon:
   eureka:
     enabled: true
