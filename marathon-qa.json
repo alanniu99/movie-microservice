@@ -1,5 +1,5 @@
 [{
-  "id": "/movieapps-qa/movie-services/movie",
+  "id": "/movies-qa/movie",
   "cmd": null,
   "cpus": 0.3,
   "mem": 2000,
