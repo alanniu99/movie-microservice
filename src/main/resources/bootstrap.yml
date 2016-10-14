@@ -20,5 +20,11 @@ spring:
     config:
       uri: http://configServer:8888
       enabled: false
+  eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
 encrypt:
   failOnError: false
