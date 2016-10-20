@@ -29,7 +29,7 @@
           "value": "movie"
         }
       ],
-      "forcePullImage": true
+      "forcePullImage": false
     }
   },
   "env": {
