@@ -20,6 +20,10 @@
       ],
       "privileged": false,
       "parameters": [
+		{
+          "key": "network",
+          "value": "microservice"
+        },
         {
           "key": "network-alias",
           "value": "movie"
@@ -30,9 +34,6 @@
   },
   "env": {
     "SPRING_PROFILES_ACTIVE": "docker"
-  },
-  "ipAddress": {
-    "networkName": "dcos"
   }
 }
 ]
