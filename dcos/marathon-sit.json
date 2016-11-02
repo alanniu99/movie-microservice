@@ -1,0 +1,38 @@
+[{
+  "id": "/movies-sit/movies/movie",
+  "cmd": null,
+  "cpus": 0.3,
+  "mem": 2000,
+  "disk": 0,
+  "instances": 1,
+  "container": {
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "dockerniu/movie-microservice",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 9006,
+          "protocol": "tcp",
+          "labels": {}
+        }
+      ],
+      "privileged": false,
+      "parameters": [
+        {
+          "key": "network-alias",
+          "value": "movie"
+        }
+      ],
+      "forcePullImage": false
+    }
+  },
+  "env": {
+    "SPRING_PROFILES_ACTIVE": "docker"
+  },
+  "ipAddress": {
+    "networkName": "dcos"
+  }
+}
+]
