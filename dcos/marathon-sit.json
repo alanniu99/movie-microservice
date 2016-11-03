@@ -21,11 +21,11 @@
       "privileged": false,
       "parameters": [
 		{
-          "key": "network",
+          "key": "net",
           "value": "microservice"
         },
         {
-          "key": "network-alias",
+          "key": "net-alias",
           "value": "movie"
         }
       ],
